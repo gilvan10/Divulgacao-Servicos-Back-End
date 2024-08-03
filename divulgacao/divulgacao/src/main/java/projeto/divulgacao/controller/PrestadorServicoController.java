@@ -11,11 +11,13 @@ import org.springframework.web.bind.annotation.RequestBody;
 import java.util.List;
 import projeto.divulgacao.model.dto.PrestadorServicoDTO;
 import projeto.divulgacao.service.PrestadorServicoService;
+import org.springframework.beans.factory.annotation.Autowired;
 
 @RestController
 @RequestMapping(value = "/prestador-servico")
 public class PrestadorServicoController {
   
+	@Autowired
 	final PrestadorServicoService service;
 	
 	public PrestadorServicoController(PrestadorServicoService service) {

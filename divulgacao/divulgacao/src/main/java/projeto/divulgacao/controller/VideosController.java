@@ -11,11 +11,13 @@ import projeto.divulgacao.model.dto.VideosDTO;
 import projeto.divulgacao.service.VideosService;
 import java.util.List;
 //import jakarta.validation.Valid;
+import org.springframework.beans.factory.annotation.Autowired;
 
 @RestController
 @RequestMapping(value = "/videos")
 public class VideosController {
 	
+	@Autowired
     final VideosService service;
 	
 	public VideosController(VideosService service) {

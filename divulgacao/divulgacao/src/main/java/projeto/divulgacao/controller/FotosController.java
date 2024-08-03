@@ -1,6 +1,7 @@
 package projeto.divulgacao.controller;
 
 import org.springframework.http.ResponseEntity;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -16,6 +17,7 @@ import java.util.List;
 @RequestMapping(value = "/fotos")
 public class FotosController {
 	
+	@Autowired
 	final FotosService service;
 	
 	public FotosController(FotosService service) {
